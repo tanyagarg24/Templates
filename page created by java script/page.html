@@ -1,0 +1,66 @@
+<!doctype html>
+<html>
+<title>Html tag by javascript</title>
+
+
+<body  id="demo" >
+    
+    
+    
+<script>
+    
+    
+    
+    var div=document.createElement("div");
+    div.style.width="960px";
+    div.style.margin="auto";
+    div.id="enter";
+    div.style.backgroundColor="grey";
+      div.style.clear="both";
+    document.getElementById("demo").appendChild(div);
+    
+    
+    
+    var x=document.createElement("h1");
+    x.innerHTML="Html element by javascript";
+    x.style.color="blue";
+    
+    x.style.textAlign="center";
+    x.setAttribute("class","test");
+    document.getElementById("enter").appendChild(x);
+    
+    //--nav
+    
+     var nav=document.createElement("div");
+    
+    nav.id="nav";
+    nav.style.backgroundColor="black";
+    nav.style.padding="1px 0";
+    
+    document.getElementById("enter").appendChild(nav);
+     var y=document.createElement("ul");
+     var home=["Home","About","Services","Contact","News"];
+    for(i=0;i<=home.length-1;i++){
+    
+        y.innerHTML+="<li id=list style='display:inline;padding:10px'>" + "<a href='#' style='color:white;text-decoration:none;'>" + home[i] + "</a>" + "</li>";
+    }
+    
+    y.style.listStyle="none"
+
+       
+  
+   document.getElementById("nav").appendChild(y);
+    
+    var image=document.createElement()
+    
+    
+</script>
+
+</body>
+
+
+
+
+</html>
+
+
